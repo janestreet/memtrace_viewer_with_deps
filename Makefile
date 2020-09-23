@@ -1,13 +1,13 @@
 INSTALL_ARGS := $(if $(PREFIX),--prefix $(PREFIX),)
 
 default:
-	dune build --profile release @memtrace_viewer/install
+	dune build
 
 install:
-	dune install $(INSTALL_ARGS) memtrace_viewer
+	dune install $(INSTALL_ARGS)
 
 uninstall:
-	dune uninstall $(INSTALL_ARGS) memtrace_viewer
+	dune uninstall $(INSTALL_ARGS)
 
 reinstall: uninstall install
 

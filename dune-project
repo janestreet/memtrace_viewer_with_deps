@@ -1,14 +1,15 @@
-(lang dune 2.7)
-(name  memtrace_viewer_with_deps)
+(lang dune 1.10)
+(name  memtrace_viewer)
 (generate_opam_files true)
 
 (package
- (name memtrace_viewer_with_deps)
+ (name memtrace_viewer)
  (depends
- ocaml
+  (ocaml (>= 4.11.0))
   (astring (>= 0.8.5))
   (base64 (>= 3.4.0))
   (cryptokit (>= 1.14))
+  (cstruct (>= 5.2.0))
   (ctypes (>= 0.17.1))
   (ctypes-foreign (>= 0.4.0))
   (domain-name (>= 0.3.0))
